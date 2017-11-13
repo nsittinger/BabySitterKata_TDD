@@ -25,5 +25,13 @@ namespace BabySitter_Tests
             Assert.AreEqual(false, timeConfirmation.CannotWorkPastFourAM(7));
             Assert.AreEqual(true, timeConfirmation.CannotWorkPastFourAM(20));
         }
+
+        [TestMethod]
+        public void BedTimeIsAfterStartTime()
+        {
+            Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(6, 8));
+            Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(7, 10));
+            Assert.AreEqual(false, timeConfirmation.BedTimeIsAfterStartTime(7, 6));
+        }
     }
 }

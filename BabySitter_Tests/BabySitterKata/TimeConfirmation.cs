@@ -27,5 +27,15 @@ namespace BabySitterKata
             }
             return canWork;
         }
+
+        public bool BedTimeIsAfterStartTime(int startTime, int bedTime)
+        {
+            bool bedTimeIsAfterStartTime = true;
+            if(bedTime < startTime)
+            {
+                bedTimeIsAfterStartTime = false;
+            }
+            return bedTimeIsAfterStartTime;
+        }
     }
 }
