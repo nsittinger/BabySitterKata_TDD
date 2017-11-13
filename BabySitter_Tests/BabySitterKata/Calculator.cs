@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace BabySitterKata
 {
-    class Program
+    public class Calculator
     {
-        static void Main(string[] args)
-        {
-                        
-        }
+
     }
 }

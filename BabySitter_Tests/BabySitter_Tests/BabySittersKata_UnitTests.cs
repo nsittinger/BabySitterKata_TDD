@@ -9,9 +9,11 @@ namespace BabySitter_Tests
     public class BabySittersKata_UnitTests
     {
         TimeConfirmation timeConfirmation = new TimeConfirmation();
+        Calculator calculator = new Calculator();
 
+        //TIME CONFIRMATION TESTS
         [TestMethod]
-        public void CannotWorkUntilFivePM()
+        public void CannotWorkUntilFivePMTest()
         {
             Assert.AreEqual(true, timeConfirmation.CannotWorkUntilFivePM(18));
             Assert.AreEqual(true, timeConfirmation.CannotWorkUntilFivePM(17));
@@ -19,7 +21,7 @@ namespace BabySitter_Tests
         }
 
         [TestMethod]
-        public void CannotWorkPastFourAM()
+        public void CannotWorkPastFourAMTest()
         {
             Assert.AreEqual(true, timeConfirmation.CannotWorkPastFourAM(2));
             Assert.AreEqual(false, timeConfirmation.CannotWorkPastFourAM(7));
@@ -27,7 +29,7 @@ namespace BabySitter_Tests
         }
 
         [TestMethod]
-        public void BedTimeIsAfterStartTime()
+        public void BedTimeIsAfterStartTimeTest()
         {
             Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(18, 20));
             Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(19, 22));
@@ -35,12 +37,24 @@ namespace BabySitter_Tests
         }
 
         [TestMethod]
-        public void EndTimeIsAfterStartTime()
+        public void EndTimeIsAfterStartTimeTest()
         {
             Assert.AreEqual(true, timeConfirmation.EndTimeIsAfterStartTime(18, 20));
             Assert.AreEqual(false, timeConfirmation.EndTimeIsAfterStartTime(20, 18));
             Assert.AreEqual(true, timeConfirmation.EndTimeIsAfterStartTime(18, 1));
             Assert.AreEqual(false, timeConfirmation.EndTimeIsAfterStartTime(3, 1));
         }
+
+        [TestMethod]
+        public void TimeConfirmationPassTest()
+        {
+            Assert.AreEqual(true, timeConfirmation.TimeConfirmationPass(18, 20, 1));
+            Assert.AreEqual(false, timeConfirmation.TimeConfirmationPass(12, 20, 1));
+            Assert.AreEqual(false, timeConfirmation.TimeConfirmationPass(18, 20, 6));
+
+        }
+
+        //CALCULATOR TESTS
+
     }
 }

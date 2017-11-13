@@ -56,5 +56,24 @@ namespace BabySitterKata
 
             return endTimeIsAfterStartTime;
         }
+
+        public bool TimeConfirmationPass(int startTime, int bedTime, int endTime)
+        {
+            bool timeConfirmationPass = true;
+
+            TimeConfirmation timeConfirmation = new TimeConfirmation();
+
+            bool cannotWorkUntilFivePM = timeConfirmation.CannotWorkUntilFivePM(startTime);
+            bool cannotWorkPastFourAM = timeConfirmation.CannotWorkPastFourAM(endTime);
+            bool bedTimeIsAfterStartTime = timeConfirmation.BedTimeIsAfterStartTime(startTime, bedTime);
+            bool endTimeIsAfterStartTime = timeConfirmation.EndTimeIsAfterStartTime(startTime, endTime);
+
+            if (cannotWorkUntilFivePM != true || cannotWorkPastFourAM != true || bedTimeIsAfterStartTime != true || endTimeIsAfterStartTime != true)
+            {
+                timeConfirmationPass = false;
+            }
+
+            return timeConfirmationPass;
+        }
     }
 }
