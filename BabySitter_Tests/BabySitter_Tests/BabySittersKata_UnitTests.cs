@@ -61,5 +61,12 @@ namespace BabySitter_Tests
             Assert.AreEqual(24.00, calculator.StartToBedTimePay(17, 19));
             Assert.AreEqual(48.00, calculator.StartToBedTimePay(17, 21));
         }
+
+        [TestMethod]
+        public void BedTimeToMidnightPayTest()
+        {
+            Assert.AreEqual(16.00, calculator.BedTimeToMidnightPay(22));
+            Assert.AreEqual(32.00, calculator.BedTimeToMidnightPay(20));
+        }
     }
 }
