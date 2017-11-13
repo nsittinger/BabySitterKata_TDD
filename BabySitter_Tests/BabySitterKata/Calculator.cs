@@ -8,6 +8,12 @@ namespace BabySitterKata
 {
     public class Calculator
     {
+        public double StartToBedTimePay(int startTime, int bedTime)
+        {
+            int hoursFromStartToBed = bedTime - startTime;
+            double startToBedPay = hoursFromStartToBed * 12.00;
 
+            return startToBedPay;
+        }
     }
 }

@@ -55,6 +55,11 @@ namespace BabySitter_Tests
         }
 
         //CALCULATOR TESTS
-
+        [TestMethod]
+        public void StartToBedTimePayTest()
+        {
+            Assert.AreEqual(24.00, calculator.StartToBedTimePay(17, 19));
+            Assert.AreEqual(48.00, calculator.StartToBedTimePay(17, 21));
+        }
     }
 }
