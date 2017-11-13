@@ -37,5 +37,24 @@ namespace BabySitterKata
             }
             return bedTimeIsAfterStartTime;
         }
+
+        public bool EndTimeIsAfterStartTime(int startTime, int endTime)
+        {
+            bool endTimeIsAfterStartTime = true;
+
+            if((startTime <= 5 && endTime <= 5) || (startTime >= 17 && endTime >= 17))
+            {
+                if(startTime > endTime)
+                {
+                    endTimeIsAfterStartTime = false;
+                }
+            }
+            else if (startTime <= 5 && endTime >= 17)
+            {
+                endTimeIsAfterStartTime = false;
+            }
+
+            return endTimeIsAfterStartTime;
+        }
     }
 }

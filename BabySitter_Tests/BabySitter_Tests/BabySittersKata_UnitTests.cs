@@ -29,9 +29,18 @@ namespace BabySitter_Tests
         [TestMethod]
         public void BedTimeIsAfterStartTime()
         {
-            Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(6, 8));
-            Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(7, 10));
-            Assert.AreEqual(false, timeConfirmation.BedTimeIsAfterStartTime(7, 6));
+            Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(18, 20));
+            Assert.AreEqual(true, timeConfirmation.BedTimeIsAfterStartTime(19, 22));
+            Assert.AreEqual(false, timeConfirmation.BedTimeIsAfterStartTime(19, 18));
+        }
+
+        [TestMethod]
+        public void EndTimeIsAfterStartTime()
+        {
+            Assert.AreEqual(true, timeConfirmation.EndTimeIsAfterStartTime(18, 20));
+            Assert.AreEqual(false, timeConfirmation.EndTimeIsAfterStartTime(20, 18));
+            Assert.AreEqual(true, timeConfirmation.EndTimeIsAfterStartTime(18, 1));
+            Assert.AreEqual(false, timeConfirmation.EndTimeIsAfterStartTime(3, 1));
         }
     }
 }
