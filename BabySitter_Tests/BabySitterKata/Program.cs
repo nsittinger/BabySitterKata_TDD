@@ -10,7 +10,11 @@ namespace BabySitterKata
     {
         static void Main(string[] args)
         {
-                        
+            TimeConfirmation timeConfirmation = new TimeConfirmation();
+            Calculator calculator = new Calculator();
+            CLI myCLI = new CLI(timeConfirmation, calculator);
+
+            myCLI.Running();
         }
     }
 }
