@@ -30,5 +30,18 @@ namespace BabySitterKata
 
             return midnightToEndPay;
         }
+
+        public double TotalPayOut(int startTime, int bedTime, int endTime)
+        {
+            Calculator calculator = new Calculator();
+
+            double startToBedTimePay = calculator.StartToBedTimePay(startTime, bedTime);
+            double bedTimeToMidnightPay = calculator.BedTimeToMidnightPay(bedTime);
+            double midnightToEndPay = calculator.MidnightToEndPay(endTime);
+
+            double totalPayOut = (startToBedTimePay + bedTimeToMidnightPay + midnightToEndPay);
+
+            return totalPayOut;
+        }
     }
 }

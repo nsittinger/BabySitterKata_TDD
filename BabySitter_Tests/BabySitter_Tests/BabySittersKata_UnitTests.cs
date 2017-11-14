@@ -75,5 +75,11 @@ namespace BabySitter_Tests
             Assert.AreEqual(32.00, calculator.MidnightToEndPay(2));
             Assert.AreEqual(48.00, calculator.MidnightToEndPay(3));
         }
+
+        [TestMethod]
+        public void TotalPayOutTest()
+        {
+            Assert.AreEqual(104.00, calculator.TotalPayOut(17, 21, 2));
+        }
     }
 }
