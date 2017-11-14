@@ -23,5 +23,12 @@ namespace BabySitterKata
 
             return bedTimeToMidnightPay;
         }
+
+        public double MidnightToEndPay(int endTime)
+        {
+            double midnightToEndPay = endTime * 16.00;
+
+            return midnightToEndPay;
+        }
     }
 }
