@@ -10,6 +10,7 @@ namespace BabySitterKata
     {
         private TimeConfirmation TimeConfirmation { get; set; }
         private Calculator Calculator { get; set; }
+        TimeModel timeModel = new TimeModel();
 
         public CLI(TimeConfirmation timeConfirmation, Calculator calculator)
         {
@@ -31,9 +32,11 @@ namespace BabySitterKata
         {
             bool running = true;
 
-            Console.WriteLine("What time did you start?");
-            int startTime = Convert.ToInt32(Console.ReadLine());
-            
+            Console.WriteLine("What time did you start? ex. 6:00 PM");
+            string input = Console.ReadLine();
+
+            int startTime = timeModel.Switch(input);
+
             while (running)
             {
                 running = GetBedTime(startTime);
@@ -46,8 +49,10 @@ namespace BabySitterKata
         {
             bool running = true;
 
-            Console.WriteLine("When was bed time?");
-            int bedTime = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("When was bed time? ex. 9:00 PM");
+            string input = Console.ReadLine();
+
+            int bedTime = timeModel.Switch(input);
 
             while (running)
             {
@@ -61,8 +66,11 @@ namespace BabySitterKata
         {
             bool running = true;
 
-            Console.WriteLine("What time did you leave?");
-            int endTime = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What time did you leave? ex 2:00 AM");
+            string input = Console.ReadLine();
+
+
+            int endTime = timeModel.Switch(input);
 
             while (running)
             {
@@ -81,6 +89,7 @@ namespace BabySitterKata
             {
                 double totalPayOut = Calculator.TotalPayOut(startTime, bedTime, endTime);
                 Console.WriteLine("Your pay for the night is $" + totalPayOut);
+                Console.WriteLine("Press Enter to continue");
                 Console.ReadLine();
                 while (running)
                 {
@@ -90,6 +99,7 @@ namespace BabySitterKata
             else
             {
                 Console.WriteLine("Time inputs are incorrect");
+                Console.WriteLine("Press Enter to continue");
                 Console.ReadLine();
                 while (running)
                 {

@@ -8,17 +8,6 @@ namespace BabySitterKata
 {
     public class TimeConfirmation
     {
-        //private int StartTime { get; set; }
-        //private int BedTime { get; set; }
-        //private int EndTime { get; set; }
-
-        //public TimeConfirmation(int startTime, int bedTime, int endTime)
-        //{
-        //    StartTime = startTime;
-        //    BedTime = bedTime;
-        //    EndTime = endTime;
-        //}
-        
         public bool CannotWorkUntilFivePM(int startTime)
         {
             bool canWork = true;
