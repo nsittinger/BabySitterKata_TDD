@@ -1,0 +1,9 @@
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\bin\Debug\BabySitter_Tests.dll
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\bin\Debug\BabySitter_Tests.pdb
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\bin\Debug\BabySitterKata.exe
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\bin\Debug\BabySitterKata.pdb
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\bin\Debug\BabySitterKata.exe.config
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\obj\Debug\BabySitter_Tests.csprojResolveAssemblyReference.cache
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\obj\Debug\BabySitter_Tests.csproj.CoreCompileInputs.cache
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\obj\Debug\BabySitter_Tests.dll
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitter_Tests\obj\Debug\BabySitter_Tests.pdb

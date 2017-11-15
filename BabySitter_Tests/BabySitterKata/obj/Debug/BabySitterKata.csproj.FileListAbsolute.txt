@@ -1,0 +1,6 @@
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitterKata\bin\Debug\BabySitterKata.exe.config
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitterKata\bin\Debug\BabySitterKata.exe
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitterKata\bin\Debug\BabySitterKata.pdb
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitterKata\obj\Debug\BabySitterKata.csproj.CoreCompileInputs.cache
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitterKata\obj\Debug\BabySitterKata.exe
+C:\Users\nsittinger\BabySitterKata_TDD_2017\BabySitter_Tests\BabySitterKata\obj\Debug\BabySitterKata.pdb
